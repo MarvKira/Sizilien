@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<style>
+    #clockdiv{
+        font-family: sans-serif;
+        color: #fff;
+        display: inline-block;
+        font-weight: 100;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    #clockdiv > div{
+        padding: 10px;
+        border-radius: 3px;
+        background: none;
+        display: inline-block;
+    }
+
+    #clockdiv div > span{
+        padding: 15px;
+        border-radius: 3px;
+        background: none;
+        display: inline-block;
+    }
+
+    .smalltext{
+        padding-top: 5px;
+        font-size: 16px;
+    }
+
+    .jumbotron {
+        position: relative;
+        background: #000 url("files/Title.png") center center;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        overflow: hidden;
+    }
+    /**************************
+  DEFAULT BOOTSTRAP STYLES
+**************************/
+
+    .btn {
+        display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        padding: 10px 16px;
+    }
+
+    .btn-lg {
+        font-size: 18px;
+        line-height: 1.33;
+        border-radius: 6px;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #fff;
+        border-color: #fff;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active,
+    .btn-primary.active,
+    .open .dropdown-toggle.btn-primary {
+        color: #fff;
+        background-color: #fff;
+        border-color: #fff;
+    }
+
+    /***********************
+      OUTLINE BUTTONS
+    ************************/
+
+    .btn.outline {
+        background: none;
+        padding: 12px 22px;
+    }
+    .btn-primary.outline {
+        border: 2px solid #fff;
+        color: #fff;
+    }
+    .btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+        color: #fff;
+        border-color: #fff;
+    }
+    .btn-primary.outline:active, .btn-primary.outline.active {
+        border-color: #fff;
+        color: #fff;
+        box-shadow: none;
+    }
+
+    /***********************
+      CUSTON BTN VALUES
+    ************************/
+
+    .btn {
+        padding: 14px 24px;
+        border: 0 none;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    .btn:focus, .btn:active:focus, .btn.active:focus {
+        outline: 0 none;
+    }
+
+</style>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!--Navbar-->
+<div class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <button class="navbar-toggle" data-toggle="collapse" data-target = ".navHeaderCollapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+
+
+        </button>
+
+        <div class="collapse navbar-collapse navHeaderCollapse">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="index.html">Home</a> </li>
+                <li><a href="locations.html">Map</a> </li>
+            </ul>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="jumbotron">
+    <div class="container">
+        <center>
+        <h1 style="color: #fff;:value;">Sizilien 2016</h1>
+            <div id="clockdiv">
+                <div>
+                    <span class="days"></span>
+                    <div class="smalltext">Days</div>
+                </div>
+                <div>
+                    <span class="hours"></span>
+                    <div class="smalltext">Hours</div>
+                </div>
+                <div>
+                    <span class="minutes"></span>
+                    <div class="smalltext">Minutes</div>
+                </div>
+                <div>
+                    <span class="seconds"></span>
+                    <div class="smalltext">Seconds</div>
+                </div>
+            </div>
+
+        </center>
+
+
+    </div>
+</div>
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <h3>Ätna</h3>
+            <div id="intro">Wenn man in 3300 m Höhe "auf dem Dach des Mittelmeers", dem majestätischen Ätna steht, blickt man wie von einem Turm über Sizilien und das Meer. In die Tiefen Europas größtem Vulkans zu sehen ist ein Erlebnis das man nie vergißt. Unsere erfahrenen Bergführer/Vulkanologen bringen private Gruppen zu Ätnas Gipfelkratern. (Solange das die Wetterbedingungen, Ausbrüche und offizielle Regelungen erlauben). Je nach gewähltem Programm sind die körperlichen Anforderungen normal bis anspruchsvoll. Sind diese Bedingungen erfüllt und die Kleidung geeignet, dauern die Touren ca. 4-8 h - je nach gewählter Tour.
+                <br><b>Hinweis:</b>
+                <br>Die Gipfelkrater sind manchmal (wegen erhöhter Aktivität) für Exkursionen gesperrt. Touren können in solchen Fällen nur im Bereich unterhalb von 3100 m Höhe stattfinden.
+            </div>
+            <!--<img src="files/etna.png" height="250" width="250">-->
+        </div>
+
+        <div class="col-md-3">
+            <h3>Palermo</h3>
+        <p>Palermo (sizilianisch Paliemmu) ist die Hauptstadt der Autonomen Region Sizilien und der Metropolitanstadt Palermo. Sie liegt an einer Bucht an der Nordküste Siziliens. Im 8. Jahrhundert v. Chr. gegründet, erlebte die Stadt vor allem unter der Vorherrschaft der Araber sowie der Normannen und der Staufer eine Blütezeit. Palermo war u.a. Residenzstadt von Friedrich II. (HRR) und Konrad IV. (HRR).
+
+        Heute ist Palermo mit 678.492 Einwohnern (Stand 31. Dezember 2013) Italiens fünftgrößte Stadt und das politische sowie kulturelle Zentrum Siziliens.
+        </p>
+        </div>
+
+        <div class="col-md-3">
+            <h3>Catania</h3>
+            <p>Catania ist mit 315.576 Einwohnern (Stand 31. Dezember 2013) nach Palermo die zweitgrößte Stadt der italienischen autonomen Region Sizilien und die Hauptstadt der Metropolitanstadt Catania.
+
+                Catania ist eine der spätbarocken Städte des Val di Noto, die von der UNESCO zum UNESCO-Welterbe erklärt worden sind.</p>
+
+        </div>
+
+        <div class="col-md-3">
+            <h3>Tauchrevier Cefalu</h3>
+            <p>	Die Küste vor Cefalù bietet Tauchern eine einmalige Chance, Reste einer römischen Hafenanlage direkt vor der Stadt bei einem Tauchgang zu entdecken. Ein Hausriff ist zum Wiedereinstieg sicher eine gute Sache. Für Erfahrene empfehlen sind die Tauchplätze, die man mit dem Boot erreicht. Auf offenem Meer sieht man die eindrucksvolle Tierwelt des Mittelmeers. Die Tauchplätze haben verschiedene Tiefen: Auf 6 bis 30 Metern kann man hier Baracudas, Kraken, Tunfische, Seepferdchen und Muränen bewundern. Je nach Wasserströmung kann es zu einer schlechten Sichtweise kommen. Tauchplätze, die sich lohnen, sind: "Campanari (30m)", "Finale di Pollena" und "Finale Cape Valture (20m)". Mit dem Boot erreichen wir in kürzester Zeit abwechslungsreiche Tauchplätze zwischen 7 und 40 Metern. Hier treffen Sie auf üppige Fischschwärme, Thunfische, Mittelmeer-Baracudas, ungewöhnliche Felsformationen mit Gorgonien, Seegraswiesen, Sepias, Seepferdchen, Oktopussen und Muränen.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+<center><audio src="files/Jubel.mp3" controls ></audio></center>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+
+<script>
+    function getTimeRemaining(endtime) {
+        var t = Date.parse(endtime) - Date.parse(new Date());
+        var seconds = Math.floor((t / 1000) % 60);
+        var minutes = Math.floor((t / 1000 / 60) % 60);
+        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        return {
+            'total': t,
+            'days': days,
+            'hours': hours,
+            'minutes': minutes,
+            'seconds': seconds
+        };
+    }
+
+    function initializeClock(id, endtime) {
+        var clock = document.getElementById(id);
+        var daysSpan = clock.querySelector('.days');
+        var hoursSpan = clock.querySelector('.hours');
+        var minutesSpan = clock.querySelector('.minutes');
+        var secondsSpan = clock.querySelector('.seconds');
+
+        function updateClock() {
+            var t = getTimeRemaining(endtime);
+
+            daysSpan.innerHTML = t.days;
+            hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+            minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+            secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+            if (t.total <= 0) {
+                clearInterval(timeinterval);
+            }
+        }
+
+        updateClock();
+        var timeinterval = setInterval(updateClock, 1000);
+    }
+
+    var deadline = 'August 18 2016 23:59:59 GMT+0200';
+    initializeClock('clockdiv', deadline);
+</script>
+</body>
+</html>
